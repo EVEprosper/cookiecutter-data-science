@@ -1,0 +1,10 @@
+[report]
+    omit = 
+        {{cookiecutter.library_name}}/_version.py
+        {{cookiecutter.library_name}}/__init__.py
+        {{cookiecutter.library_name}}_crons/__init__.py
+
+[paths]
+    source = 
+        {{cookiecutter.library_name}}/
+        {{cookiecutter.library_name}}_crons/
