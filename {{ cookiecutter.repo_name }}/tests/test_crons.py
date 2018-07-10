@@ -18,4 +18,8 @@ class Test{{cookiecutter.cron_name}}:
         result = self.cli('-h')
 
         result = self.cli('--version')
-        assert result.strip() == f'{{{cookiecutter.library_name}}_crons.GetNews.PROGNAME} {__version__}'
+        assert result.strip() == '{progname} {version}'.format(
+            progname={{cookiecutter.library_name}}_crons.PROGNAME,
+            version=__version__,
+        )
+
